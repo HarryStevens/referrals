@@ -1,6 +1,11 @@
 function dataTable(){
 	//Permits operations from DataTables jQuery plugin
-	$('#referrals').DataTable();
+	$('#referrals').DataTable({    
+		"bPaginate": true,
+	    "bLengthChange": false,
+    	"bFilter": true,
+    	"bInfo": false,
+    	"bAutoWidth": false });
 }
 
 function getData(){
