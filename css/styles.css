@@ -1,0 +1,30 @@
+.center {
+	margin: 0 auto;
+	display: table;
+	width:700px;
+}
+
+h3{
+	font-size: 14px;
+}
+table#referrals {
+	width:700px;
+}
+/*
+table#referrals th {
+	background: #aaa;
+
+*/
+
+table#referrals tbody tr:nth-child(2n) td {
+  background: #ddd;
+}
+table#referrals tbody tr:nth-child(2n+1) td {
+  background: #fff;
+}
+table#referrals td,th {
+	padding: 12px;
+}
+table#referrals tr {
+	border-bottom: 1px dotted black;
+}
