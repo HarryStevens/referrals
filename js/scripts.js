@@ -3,9 +3,8 @@ function dataTable(){
 	$('#referrals').DataTable({    
 		"bPaginate": true,
 	    "bLengthChange": false,
-    	"bFilter": true,
-    	"bInfo": false,
-    	"bAutoWidth": false });
+    	"bFilter": true
+    });
 }
 
 function getData(){
@@ -17,7 +16,7 @@ function getData(){
 		
 		$.each(a, function(idx, elem){
 			console.log(elem[0]);
-			$('table#referrals TBODY').append('<tr><td>'+elem[0]+'</td><td>'+elem[1] +'</td><td>'+elem[2] +'</td><td>'+elem[3] +'</td></tr>');
+			$('table#referrals TBODY').append('<tr><td><a href="pdf/'+elem[4]+'.pdf">'+elem[0]+'</a></td><td>'+elem[1] +'</td><td>'+elem[2] +'</td><td>'+elem[3] +'</td></tr>');
 		});
 		
 		dataTable();
